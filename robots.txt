@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /gracias.html
+Disallow: /404.html
+
+Sitemap: https://www.retentialex.com/sitemap.xml
