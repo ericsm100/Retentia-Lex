@@ -1650,3 +1650,11 @@ body.nav-open { overflow: hidden; }
     padding: 4px 9px;
   }
 }
+
+/* Cifras destacadas dentro de un titular */
+.figure {
+  color: var(--c-sapphire);
+  font-weight: inherit;
+  white-space: nowrap;
+}
+.section--sapphire .figure { color: #fff; }

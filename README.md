@@ -1,7 +1,7 @@
 # Retentia Lex — Sitio web
 
-Sitio web corporativo y orientado a conversión de **Retentia Lex**, agencia de automatización
-con IA para despachos de abogados.
+Sitio web corporativo y orientado a conversión de **Retentia Lex**, agencia especializada
+en eficiencia operativa para despachos de abogados.
 
 Está construido como un sitio **estático**: HTML semántico, una hoja de estilos y tres ficheros
 JavaScript pequeños. No requiere compilación, dependencias ni servidor de aplicaciones, lo que
@@ -14,7 +14,7 @@ mantiene la carga rápida y el despliegue sencillo.
 ```
 .
 ├── index.html                     Inicio
-├── automatizacion-clientes.html   Área 01 — Automatización de Clientes
+├── automatizacion-clientes.html   Área 01 — Captación de Clientes
 ├── gestion-documental.html        Área 02 — Gestión Documental
 ├── como-funciona.html             Proceso y metodología
 ├── sobre-nosotros.html            La agencia y sus principios
