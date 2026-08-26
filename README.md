@@ -56,12 +56,16 @@ o cualquier alojamiento con soporte HTML. No hay paso de build.
 
 Antes de publicar conviene:
 
-1. **Sustituir el dominio.** Las etiquetas `canonical`, Open Graph, `sitemap.xml` y `robots.txt`
-   apuntan a `https://www.retentialex.com`. Si el dominio final es otro, hay que reemplazarlo:
+1. **Dominio.** El fichero `CNAME` fija el dominio en `retentialex.com` (sin `www`), y las
+   etiquetas `canonical`, Open Graph, `sitemap.xml` y `robots.txt` apuntan al mismo sitio.
+   Si algún día cambia el dominio, hay que reemplazarlo en los dos sitios:
    ```bash
-   grep -rl "www.retentialex.com" . --include="*.html" --include="*.xml" --include="*.txt" \
-     | xargs sed -i "s|www.retentialex.com|SU-DOMINIO.com|g"
+   echo "SU-DOMINIO.com" > CNAME
+   grep -rl "retentialex.com" . --include="*.html" --include="*.xml" --include="*.txt" \
+     | xargs sed -i "s|retentialex.com|SU-DOMINIO.com|g"
    ```
+   Conviene además configurar en el DNS que `www.retentialex.com` redirija al dominio sin `www`,
+   para que ambas direcciones no compitan entre sí en los buscadores.
 2. **Completar los documentos legales.** `aviso-legal.html`, `politica-privacidad.html` y
    `cookies.html` contienen la estructura correcta, pero los datos identificativos del titular
    están marcados entre corchetes (`[Razón social]`, `[NIF o CIF]`, `[Dirección completa]`).

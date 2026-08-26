@@ -4,4 +4,4 @@ Allow: /
 Disallow: /gracias.html
 Disallow: /404.html
 
-Sitemap: https://www.retentialex.com/sitemap.xml
+Sitemap: https://retentialex.com/sitemap.xml
